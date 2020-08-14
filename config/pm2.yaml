@@ -1,0 +1,29 @@
+apps:
+
+  - name: "squid"
+    script: "/root/scripts/squid.sh"
+    autorestart: true
+    restart_delay: 3000
+    kill_timeout: 10000
+    log_date_format: "YYYY-MM-DD HH:mm:ss Z"
+
+  - name: "apache"
+    script: "/root/scripts/apache2.sh"
+    autorestart: true
+    restart_delay: 3000
+    kill_timeout: 10000
+    log_date_format: "YYYY-MM-DD HH:mm:ss Z"
+
+  - name: "sshd"
+    script: "/root/scripts/sshd.sh"
+    autorestart: true
+    restart_delay: 3000
+    kill_timeout: 10000
+    log_date_format: "YYYY-MM-DD HH:mm:ss Z"
+
+  - name: "openvpn"
+    script: "/root/scripts/connect.sh"
+    autorestart: true
+    restart_delay: 3000
+    kill_timeout: 10000
+    log_date_format: "YYYY-MM-DD HH:mm:ss Z"
