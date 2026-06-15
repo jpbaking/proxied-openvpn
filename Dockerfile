@@ -25,4 +25,4 @@ COPY ./ovpn ./ovpn
 COPY ./config/squid.conf /etc/squid/squid.conf
 COPY ./config/pm2.yaml ./pm2.yaml
 
-CMD /usr/local/bin/pm2-runtime /root/pm2.yaml
+CMD ["/usr/local/bin/pm2-runtime", "/root/pm2.yaml"]
