@@ -22,7 +22,6 @@ WORKDIR /root/
 
 COPY ./scripts ./scripts
 COPY ./ovpn ./ovpn
-COPY ./tools ./tools
 COPY ./config/squid.conf /etc/squid/squid.conf
 COPY ./config/pm2.yaml ./pm2.yaml
 

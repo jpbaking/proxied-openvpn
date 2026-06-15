@@ -83,4 +83,3 @@ When the user requests a durable behavior change, record it here or in the relev
 - [config/](config/AGENTS.md) — runtime config files copied into the image (`pm2.yaml`, `squid.conf`)
 - [scripts/](scripts/AGENTS.md) — PM2-managed foreground launch scripts for each container service
 - [ovpn/](ovpn/AGENTS.md) — bind-mount point for user-provided OpenVPN credentials and connection script
-- [tools/](tools/AGENTS.md) — diagnostic utilities bundled in the image (Ookla Speedtest CLI)
